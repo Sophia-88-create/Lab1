@@ -83,23 +83,24 @@
 ```mermaid
 graph TD
     A([Начало]) --> B[/Ввести: A, B, C, D/]
-    B --> Init[Unic = 1]
+    B --> C[Unic = 1]
     
-    Init --> C{B != A}
-    C -- Да --> D[Unic = Unic + 1]
-    C -- Нет --> E{C != A && C != B}
-    D --> E
+    C --> D{B != A}
+    D -- Да --> E[Unic = Unic + 1]
+    D -- Нет --> F{C != A и C != B}
+    E --> F
     
-    E -- Да --> F[Unic = Unic + 1]
-    E -- Нет --> G{D != A && D != B && D != C}
-    F --> G
+    F -- Да --> G[Unic = Unic + 1]
+    F -- Нет --> H{D != A, B, C}
+    G --> H
     
-    G -- Да --> H[Unic = Unic + 1]
-    G -- Нет --> Out[/Вывод: Unic/]
-    H --> Out
+    H -- Да --> I[Unic = Unic + 1]
+    H -- Нет --> J[/Вывод: Unic/]
+    I --> J
     
-    Out --> Z([Конец])
+    J --> Z([Конец])
 ```
+
 
 
 ### 5. Программа
