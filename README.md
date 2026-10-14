@@ -102,12 +102,9 @@ graph TD
 ```
 
 
-
 ### 5. Программа
 
-### 5. Программа
-
-```
+```java
 import java.io.PrintStream;
 import java.util.Scanner;
 
@@ -148,6 +145,7 @@ public class Main {
     }
 }
 ```
+
 
 
 ### 6. Анализ правильности решения
